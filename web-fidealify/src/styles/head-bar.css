@@ -1,0 +1,38 @@
+head-bar {
+    display: block;
+    box-sizing: border-box;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+.navbar {
+    padding: 0 3rem;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.nav-item {
+    padding: 1rem;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1px solid black;
+    width: 0%;
+}
+
+.nav-link::after:hover {
+    width: 100%;
+}

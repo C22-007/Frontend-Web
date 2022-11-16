@@ -1,0 +1,34 @@
+foot-bar {
+    display: block;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: black;
+    padding: 2rem 0;
+    color: white;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icon a {
+    margin-right: 1.2rem;
+}
+
+.rule {
+    font-size: 0.7em;
+}
+
+
+
