@@ -1,6 +1,6 @@
 /* Navbar */
 .navbar-brand {
-    font-family: Viga;
+    font-family: 'League Spartan', sans-serif;;
     font-size: 32px;
 }
 
@@ -10,9 +10,10 @@
 
 /* Atas Navbar */
 .atas {
-    background-color: #f2d470;
+    background-color: #3F6FF5;
     padding-bottom: 17px;
     padding-top: 10px;
+    color: white;
 }
 
 /* Jumbotron */
