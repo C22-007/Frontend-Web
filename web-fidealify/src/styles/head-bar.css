@@ -1,0 +1,61 @@
+head-bar {
+    display: block;
+    box-sizing: border-box;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+.navbar-custom {
+    padding: 0 3rem;
+    font-weight: bold;
+}
+
+.navbar-brand-custom {
+    font-size: 2rem;
+}
+
+.navbar-brand-custom:hover {
+    color: #3F6FF5;
+}
+
+.nav-item-custom {
+    padding: 1rem;
+} 
+
+.nav-link-custom {
+    position: relative;
+    color: black;
+}
+
+.nav-link-custom:hover {
+    color: black;
+}
+
+.nav-link-custom::after, .active::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.2s;
+    border-radius: 1em;
+}
+
+.active::after {
+    border: 0.2em solid black;
+}
+
+.nav-link-custom:hover:not(.active)::after {
+    content: '';
+    border: 0.2em solid black;
+}
+
+
+
+

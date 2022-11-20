@@ -1,0 +1,42 @@
+foot-bar {
+    display: block;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 2rem 0;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #3F6FF5;
+}
+
+.social-icon a {
+    margin-right: 1.5rem;
+    font-size: 1.3em;
+}
+
+.nav-bottom-custom a {
+    font-weight: bold;
+}
+
+.policy-custom a {
+    font-size: 0.7em;
+    margin-right: 1.5rem;
+}
+
+
+
