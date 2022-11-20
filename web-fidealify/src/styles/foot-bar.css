@@ -3,10 +3,8 @@ foot-bar {
     box-sizing: border-box;
 }
 
-.footer {
-    background-color: black;
+footer {
     padding: 2rem 0;
-    color: white;
 }
 
 ul {
@@ -19,15 +17,25 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
+}
+
+a:hover {
+    color: #3F6FF5;
 }
 
 .social-icon a {
-    margin-right: 1.2rem;
+    margin-right: 1.5rem;
+    font-size: 1.3em;
 }
 
-.rule {
+.nav-bottom-custom a {
+    font-weight: bold;
+}
+
+.policy-custom a {
     font-size: 0.7em;
+    margin-right: 1.5rem;
 }
 
 
