@@ -1,2 +1,0 @@
-footer : 
-homepage : https://www.bootstrapdash.com/demo/marshmallow/
