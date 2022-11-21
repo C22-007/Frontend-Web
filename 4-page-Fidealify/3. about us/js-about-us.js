@@ -1,5 +1,3 @@
-////INI ADALAH JS YANG KETIKA DIKATIKAAN KE HTML, LIST TIDAK KELIATAN DIPERMUKAAN
-
 var UL = document.getElementById("myUL");
 // hilde the list by default
 UL.style.display = "none";
