@@ -12,6 +12,8 @@ let buttonReset = document.querySelector('#buttonReset');
 
 const category = document.querySelector('.image-custom');
 
+const article = document.querySelector('.rekomendasi-container');
+
 
 function displayProgress() {
     percentage.innerText = `${calculateBodyfat()}%`;
@@ -38,6 +40,14 @@ function displayCategory() {
     // console.log(calculateBodyfat());
 }
 
+function displayArticle() {
+    if(article.hidden == true){
+        article.hidden = false;
+    } else {
+        article.hidden = true;
+    } 
+}
+
 // console.log(displayProgress());
 
 // console.log(typeof(inputUsia.value));
@@ -46,6 +56,7 @@ buttonHasil.addEventListener('click', (event) => {
 
     displayProgress();
     displayCategory();
+    displayArticle();
 });
 
 
@@ -103,6 +114,7 @@ buttonReset.addEventListener('click', (event) => {
     percentage.textContent = '0%';
     barCircular.style.background = `conic-gradient(#3F6FF5 0deg, #ededed 0deg)`;
     category.setAttribute("src", "");
+    article.setAttribute("hidden", true);
     // console.log('halo');
 });
 
