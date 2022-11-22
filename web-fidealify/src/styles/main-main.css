@@ -3,21 +3,63 @@ section {
 }
 
 /* timbang */
-.background-container {
+.form-container {
     background-color: #ddd;
     padding: 2rem 0;
     border-radius: 1.2rem;
 }
 
-.input-custom,
-.btn-timbang-custom {
+.input-custom {
     border-radius: 1.2rem;
 }
 
-.jarum-custom {
+.btn-hasil-custom,
+.btn-reset-custom {
     width: 100%;
-    height: 100%;
-    background-color: #aaa;
+    border-radius: 1.2rem;
 }
 
+.bar-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.2rem;
+}
+.bar-circular {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    /* padding-top: 100%; */
+    border-radius: 50%;
+    /* color: #3F6FF5; */
+    background: conic-gradient(#3F6FF5 0deg, #ededed 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar-circular::after {
+    position: absolute;
+    content: '';
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.bar-percentage {
+    font-size: 3em;
+    font-weight: 600;
+    color: #3F6FF5;
+    z-index: 1;
+}
+/* .bar-text {
+    font-size: 25px;
+    font-weight: 600;
+    color: #3F6FF5;
+    margin: 20px 0;
+} */
 /* rentang */
