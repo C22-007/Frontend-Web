@@ -15,8 +15,7 @@
     </header>
     
     <main>
-        <!-- animasi orang -->
-        <!-- animasi artikel -->
+        <!-- timbang -->
         <section class="timbang-area mt-3">
             <div class="row timbang-title">
                 <div class="col-sm-12">
@@ -25,53 +24,61 @@
             </div>
 
             <div class="row timbang-container">
-                <div class="col-sm-8 offset-sm-2">
-                    <div class="row mt-3 background-container">
+                <div class="col-sm-8 col-md-8 col-lg-8 offset-sm-2 offset-md-2 offset-lg-2">
+                    <div class="row mt-3 form-container">
                         <div class="col-sm-5 offset-sm-1">
                             <form class="form-custom">
                                 <div class="row mb-3">
-                                <label for="inputUsia" class="col-sm-2 col-form-label">Usia</label>
-                                <div class="col-sm-10">
-                                    <input type="input" class="form-control input-custom" id="inputUsia">
-                                </div>
+                                    <label for="inputUsia" class="col-sm-2 col-form-label">Usia</label>
+                                    <div class="col-sm-10">
+                                        <input type="input" class="form-control input-custom" id="inputUsia">
+                                    </div>
                                 </div>
                                 <div class="row mb-3">
-                                <label for="inputTinggi" class="col-sm-2 col-form-label">Tinggi</label>
-                                <div class="col-sm-10">
-                                    <input type="input" class="form-control input-custom" id="inputTinggi">
-                                </div>
+                                    <label for="inputTinggi" class="col-sm-2 col-form-label">Tinggi</label>
+                                    <div class="col-sm-10">
+                                        <input type="input" class="form-control input-custom" id="inputTinggi">
+                                    </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputBerat" class="col-sm-2 col-form-label">Berat</label>
                                     <div class="col-sm-10">
-                                    <input type="input" class="form-control input-custom" id="inputBerat">
+                                        <input type="input" class="form-control input-custom" id="inputBerat">
                                     </div>
                                 </div>
                                 <fieldset class="row mb-3">
-                                <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-                                <div class="col-sm-10">
-                                    <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                    <label class="form-check-label" for="gridRadios1">
-                                        Pria
-                                    </label>
-                                    </div>
-                                    <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                    <label class="form-check-label" for="gridRadios2">
-                                        Wanita
-                                    </label>
+                                    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                Pria
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">
+                                                Wanita
+                                        </label>
                                     </div>
                                 </fieldset>
-                                <div class="row col-sm-10 offset-sm-2">
-                                    <button type="submit" class="btn btn-primary btn-timbang-custom">Timbang</button>
+
+                                <div class="row">
+                                    <div class="col-sm-5 offset-sm-2 mt-2">
+                                        <button type="submit" class="btn btn-primary btn-hasil-custom" id="buttonHasil">Hasil</button>
+                                    </div>
+                                    <div class="col-sm-5 mt-2">
+                                        <button type="submit" class="btn btn-primary btn-reset-custom" id="buttonReset">Reset</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
             
-                        <div class="col-sm-5">              
-                            <div class="jarum-custom">
-
+                        <div class="col-sm-5 mt-3">              
+                            <div class="bar-container">
+                                <div class="bar-circular">
+                                    <span class="bar-percentage">0%</span>
+                                </div>
                             </div>
                         </div>
                     </div>
