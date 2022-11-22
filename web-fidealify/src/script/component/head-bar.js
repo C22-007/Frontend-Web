@@ -16,16 +16,16 @@ class HeadBar extends HTMLElement {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item nav-item-custom">
-                            <a class="nav-link nav-link-custom active" aria-current="page" href="#">Beranda</a>
+                            <a class="nav-link nav-link-custom text-center" aria-current="page" href="#">Beranda</a>
                         </li>
                         <li class="nav-item nav-item-custom">
-                            <a class="nav-link nav-link-custom" href="#">Timbang</a>
+                            <a class="nav-link nav-link-custom text-center" href="#">Timbang</a>
                         </li>
                         <li class="nav-item nav-item-custom">
-                            <a class="nav-link nav-link-custom" href="#">Blog</a>
+                            <a class="nav-link nav-link-custom text-center" href="#">Blog</a>
                         </li>
                         <li class="nav-item nav-item-custom">
-                            <a class="nav-link nav-link-custom" href="#">Tentang</a>
+                            <a class="nav-link nav-link-custom text-center" href="#">Tentang</a>
                         </li>
                     </ul>
                 </div>

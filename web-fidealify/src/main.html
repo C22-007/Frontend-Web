@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <head-bar></head-bar>
+    </header>
+    
+    <main>
+        <!-- animasi orang -->
+        <!-- animasi artikel -->
+        <section class="timbang-area mt-3">
+            <div class="row timbang-title">
+                <div class="col-sm-12">
+                    <h3 class="text-center fw-bold">Timbang</h3>
+                </div>
+            </div>
+
+            <div class="row timbang-container">
+                <div class="col-sm-8 offset-sm-2">
+                    <div class="row mt-3 background-container">
+                        <div class="col-sm-5 offset-sm-1">
+                            <form class="form-custom">
+                                <div class="row mb-3">
+                                <label for="inputUsia" class="col-sm-2 col-form-label">Usia</label>
+                                <div class="col-sm-10">
+                                    <input type="input" class="form-control input-custom" id="inputUsia">
+                                </div>
+                                </div>
+                                <div class="row mb-3">
+                                <label for="inputTinggi" class="col-sm-2 col-form-label">Tinggi</label>
+                                <div class="col-sm-10">
+                                    <input type="input" class="form-control input-custom" id="inputTinggi">
+                                </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputBerat" class="col-sm-2 col-form-label">Berat</label>
+                                    <div class="col-sm-10">
+                                    <input type="input" class="form-control input-custom" id="inputBerat">
+                                    </div>
+                                </div>
+                                <fieldset class="row mb-3">
+                                <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Pria
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Wanita
+                                    </label>
+                                    </div>
+                                </fieldset>
+                                <div class="row col-sm-10 offset-sm-2">
+                                    <button type="submit" class="btn btn-primary btn-timbang-custom">Timbang</button>
+                                </div>
+                            </form>
+                        </div>
+            
+                        <div class="col-sm-5">              
+                            <div class="jarum-custom">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- rentang -->
+        <section class="rentang-area">
+            <div class="row rentang-title">
+                <div class="col-sm-12">
+                    <h3 class="text-center fw-bold">Rentang (%)</h3>
+                </div>
+            </div>
+
+            <div class="row rentang-container">
+                <div class="col-sm-8 offset-sm-2">
+                    <img src="./assets/images/bodyfat-male-average.jpg" alt="" class="rounded mx-auto d-block">
+                </div>
+            </div>
+        </section>
+
+        <!-- rekomendasi makanan -->
+        <section class="rekomendasi-area mt-5">
+            <div class="row rekomendasi-title">
+                <div class="col-sm-12">
+                    <h3 class="text-center fw-bold">Rekomendasi Makanan</h3>
+                </div>
+            </div>
+
+            <div class="row rekomendasi-container">
+                <div class="col-sm-8 offset-sm-2">
+                    <div class="row mt-3 background-container">
+                        <div class="col-sm-5 offset-sm-1">
+                            <img src="./assets/images/bodyfat-table.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-sm-5">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus dolor mollitia recusandae autem laborum deleniti magni nemo fuga ratione at, qui perferendis itaque! Totam neque, perspiciatis omnis quia consequatur vitae.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At natus a doloribus ipsa exercitationem. Modi nam aliquid neque, dolor, recusandae enim animi necessitatibus, similique labore numquam iusto voluptatem nemo sint.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <foot-bar></foot-bar>
+    </footer>
+
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./app.js" type="module"></script>
+</body>
+</html>
