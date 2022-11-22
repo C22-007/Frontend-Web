@@ -71,6 +71,12 @@
     width: 50%;
   }
 
+.timeline {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:auto;
+  }
 
 /* Info Panel */
 .info-panel {
@@ -127,11 +133,6 @@
 }
 
 /* Search Box*/
-
-
-
-
-
 
 
 /* footer */
