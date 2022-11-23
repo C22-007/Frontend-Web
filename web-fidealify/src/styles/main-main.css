@@ -41,6 +41,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: anima 2s linear forwards;
 }
 .bar-circular::after {
     position: absolute;
@@ -62,4 +63,14 @@ section {
     color: #3F6FF5;
     margin: 20px 0;
 } */
+
+/* @keyframes anima {
+    0% {
+        background: conic-gradient(#3F6FF5 0deg, #ededed 0deg);
+    }
+    100% {
+        background: conic-gradient(#3F6FF5 360deg, #ededed 0deg);
+    }
+} */
+
 /* rentang */

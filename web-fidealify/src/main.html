@@ -31,19 +31,19 @@
                                 <div class="row mb-3">
                                     <label for="inputUsia" class="col-sm-2 col-form-label">Usia</label>
                                     <div class="col-sm-10">
-                                        <input type="input" class="form-control input-custom" id="inputUsia">
+                                        <input type="number" class="form-control input-custom" id="inputUsia" min="0" max="100">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputTinggi" class="col-sm-2 col-form-label">Tinggi</label>
                                     <div class="col-sm-10">
-                                        <input type="input" class="form-control input-custom" id="inputTinggi">
+                                        <input type="input" class="form-control input-custom" id="inputTinggi" required>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputBerat" class="col-sm-2 col-form-label">Berat</label>
                                     <div class="col-sm-10">
-                                        <input type="input" class="form-control input-custom" id="inputBerat">
+                                        <input type="input" class="form-control input-custom" id="inputBerat" >
                                     </div>
                                 </div>
                                 <fieldset class="row mb-3">
@@ -65,19 +65,19 @@
 
                                 <div class="row">
                                     <div class="col-sm-5 offset-sm-2 mt-2">
-                                        <button type="submit" class="btn btn-primary btn-hasil-custom" id="buttonHasil">Hasil</button>
+                                        <button class="btn btn-primary btn-hasil-custom" id="buttonHasil">Hasil</button>
                                     </div>
                                     <div class="col-sm-5 mt-2">
-                                        <button type="submit" class="btn btn-primary btn-reset-custom" id="buttonReset">Reset</button>
+                                        <button class="btn btn-primary btn-reset-custom" id="buttonReset">Reset</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
             
-                        <div class="col-sm-5 mt-3">              
+                        <div class="col-sm-5">              
                             <div class="bar-container">
-                                <div class="bar-circular">
-                                    <span class="bar-percentage">0%</span>
+                                <div class="bar-circular" id="barCircular">
+                                    <span class="bar-percentage" id="barPercentage">0%</span>
                                 </div>
                             </div>
                         </div>
