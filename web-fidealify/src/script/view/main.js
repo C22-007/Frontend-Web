@@ -2,6 +2,7 @@ const inputUsia = document.querySelector('#inputUsia');
 const inputTinggi = document.querySelector('#inputTinggi');
 const inputBerat = document.querySelector('#inputBerat');
 
+
 const barCircular = document.querySelector('#barCircular');
 const barPercentage = document.querySelector('#barPercentage');
 
@@ -12,12 +13,15 @@ const categoryDescription = document.querySelector('#categoryDescription');
 const buttonHasil = document.querySelector('#buttonHasil');
 const buttonReset = document.querySelector('#buttonReset');
 
+// const radioGender = document.querySelector('input[type="radio"]:checked');
+
+// console.log(radioGender.value);
 
 // selected gender
 const selectGender = () => {
-    const gender = document.querySelector('input[type="radio"]:checked');
-    
-    return gender.value;
+    const radioGender = document.querySelector('input[type="radio"]:checked');
+
+    return radioGender.value;
 }
 
 // bodyfat calculate 
@@ -40,59 +44,103 @@ const displayPercentage = (progress, percentage) => {
         percentage = 0;
     }
 }
-    
+
+// loading
+const loadingCategory = () => {
+    categoryImage.setAttribute("src", "./assets/images/loading-gif.gif");
+    categoryDescription.innerText = "Loading...";
+}
+
+// ready category 
+// const readyCategory = 
+
+// ./assets/images/bodyfat-male-essential.jpg
+// Essential Male
+
 // display bodyfat category
 const displayCategory = () => {
     const percentage = calculateBodyfat();
     const gender = selectGender();
-    
-    if(gender === "pria"){
+
+    loadingCategory();
+
+    if(gender === "pria") {
         if(percentage >= 2 && percentage <= 5) {
-            categoryImage.setAttribute("src", "./assets/images/bodyfat-male-essential.jpg");
-            categoryDescription.innerText = "Essential Male";
+            setTimeout(() => {
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-male-essential.jpg");
+                categoryDescription.innerText = "Essential Male";
+            }, 3000);
         } else if(percentage >= 6 && percentage <= 13) {
-            categoryImage.setAttribute("src", "./assets/images/bodyfat-male-athletes.jpg");
-            categoryDescription.innerText = "Athletes Male";
+            setTimeout(() => {
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-male-athletes.jpg");
+                categoryDescription.innerText = "Athletes Male";
+            }, 3000);
         } else if(percentage >= 14 && percentage <= 17) {
-            categoryImage.setAttribute("src", "./assets/images/bodyfat-male-fitness.jpg");
-            categoryDescription.innerText = "Fitness Male";
+            setTimeout(() => {
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-male-fitness.jpg");
+                categoryDescription.innerText = "Fitness Male";
+            }, 3000);
         } else if(percentage >= 18 && percentage <= 24) {
-            categoryImage.setAttribute("src", "./assets/images/bodyfat-male-average.jpg");
-            categoryDescription.innerText = "Average Male";
+            setTimeout(() => {
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-male-average.jpg");
+                categoryDescription.innerText = "Average Male";
+            }, 3000);
         } else if(percentage >= 25) {
-            categoryImage.setAttribute("src", "./assets/images/bodyfat-male-obese.jpg");
-            categoryDescription.innerText = "Obese Male";
+            setTimeout(() => {
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-male-obese.jpg");
+                categoryDescription.innerText = "Obese Male";
+            }, 3000);
         } else {
-            categoryImage.setAttribute("src", "");
-            categoryDescription.innerText = "Unknown Male";
+            setTimeout(() => {
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-question.png");
+                categoryDescription.innerText = "Unknown";
+            }, 3000);
         }
     } else if(gender === "wanita"){
         if(percentage >= 10 && percentage <= 13) {
-            categoryImage.setAttribute("src", "./assets/images/bodyfat-female-essential.jpg");
-            categoryDescription.innerText = "Essential Female";
+            setTimeout(() => {
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-female-essential.jpg");
+                categoryDescription.innerText = "Essential Female";
+            }, 3000);
         } else if(percentage >= 14 && percentage <= 20) {
-            categoryImage.setAttribute("src", "./assets/images/bodyfat-female-athletes.jpg");
-            categoryDescription.innerText = "Athletes Female";
+            setTimeout(() => {
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-female-athletes.jpg");
+                categoryDescription.innerText = "Athletes Female";
+            }, 3000);
         } else if(percentage >= 21 && percentage <= 24) {
-            categoryImage.setAttribute("src", "./assets/images/bodyfat-female-fitness.jpg");
-            categoryDescription.innerText = "Fitness Female";
+            setTimeout(() => {
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-female-fitness.jpg");
+                categoryDescription.innerText = "Fitness Female";
+            }, 3000);
         } else if(percentage >= 25 && percentage <= 31) {
-            categoryImage.setAttribute("src", "./assets/images/bodyfat-female-average.jpg");
-            categoryDescription.innerText = "Average Female";
+            setTimeout(() => {
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-female-average.jpg");
+                categoryDescription.innerText = "Average Female";
+            }, 3000);
         } else if(percentage >= 32) {
-            categoryImage.setAttribute("src", "./assets/images/bodyfat-female-obese.jpg");
-            categoryDescription.innerText = "Obese Female";
+            setTimeout(() => {
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-female-obese.jpg");
+                categoryDescription.innerText = "Obese Female";
+            }, 3000);
         } else {
-            categoryImage.setAttribute("src", "");
-            categoryDescription.innerText = "Unknown Female";
+            setTimeout(() => {
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-question.jpg");
+                categoryDescription.innerText = "Unknown";
+            }, 3000);
         }
     }
+
+
 }
+
+
 
 buttonHasil.addEventListener('click', (event) => {
     event.preventDefault();
 
-    if(inputUsia.value == "" || inputTinggi.value == "" || inputBerat.value == "") {
+    if(inputUsia.value == "" || 
+       inputTinggi.value == "" || 
+       inputBerat.value == "") {
         alert('Mohon lengkapi data lebih dahulu...');
     } else {
         // percentage
@@ -106,7 +154,7 @@ buttonHasil.addEventListener('click', (event) => {
                 counter--;
                 displayPercentage(progress, percentage);
             }    
-        }, 30);
+        }, 25);
 
         // category
         displayCategory();
@@ -125,10 +173,12 @@ buttonReset.addEventListener('click', (event) => {
     inputUsia.value = '';
     inputTinggi.value = '';
     inputBerat.value = '';
+    
     barPercentage.textContent = '0%';
     barCircular.style.background = `conic-gradient(#3F6FF5 0deg, #ededed 0deg)`;
     
-    categoryImage.setAttribute("src", "");
+    categoryImage.setAttribute("src", "./assets/images/bodyfat-question.png");
+    categoryDescription.innerText = "Not Identified";
     // article.setAttribute("hidden", true);
 });
 
