@@ -30,8 +30,6 @@
     <title>FIdealify - Bodyfat Measure</title>
   </head>
   <body>
-    <!-- Text Atas Itu -->
-      <div class="text-center atas"><strong>Ukur lemak tubuhmu, lalu capai idealnya!</em></strong></div>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -78,20 +76,28 @@
 				<div class="contact">
 					<form class="form" name="enq" method="post" action="contact.php" onsubmit="return validation();">
 						<div class="row">
-							<div class="form-group col-md-6">
-								<input type="text" name="name" class="form-control" placeholder="Name" required="required">
-							</div>
-							<div class="form-group col-md-6">
-								<input type="email" name="email" class="form-control" placeholder="Email" required="required">
+							<div class="form-group col-md-12">
+								<input type="text" name="Usia" class="form-control" placeholder="Usia" required="required">
 							</div>
 							<div class="form-group col-md-12">
-								<input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+								<input type="text" name="Tinggi" class="form-control" placeholder="Tinggi Badan" required="required">
 							</div>
 							<div class="form-group col-md-12">
-								<textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
+								<input type="text" name="Berat" class="form-control" placeholder="Berat Badan" required="required">
 							</div>
+							<form action="#">
+ 
+                <div class="select-box">
+                  <label for="select-box1" class="label select-box1"><span class="label-desc">Pilih Gender</span> </label>
+                  <select id="select-box1" class="select">
+                    <option value="Choice 1">Wanita</option>
+                    <option value="Choice 2">Pria</option>
+                  </select>
+                </div>
+              </form>
+
 							<div class="col-md-12 text-center">
-								<button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-contact-bg" title="Submit Your Message!">Send Message</button>
+								<button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-contact-bg" title="Submit Your Message!">Cek</button>
 							</div>
 						</div>
 					</form>
@@ -128,40 +134,36 @@
 <!-- Akhir Container 1 -->
 
 <br></br>
+<br></br>
+
 
 <!-- Container 2 -->
-<div class="container">
-
-  <br>
 
   <div class="container">
     <!-- <a href=#> Link ke html -->
-    <input type="image" name="makanan" src="img/rentang.png" border="0" alt="Timbang" style="width: auto;" value="Publish" align="center">
-    </a> 
+    <input type="image" name="rentang" src="img/rentang.png" border="0" alt="rentang" style="width: auto;" value="Publish" align="center">
+    </a>
 
-</div>
+    <!-- PLACE SNIPPETS KODE JS FOR FOCCUSSING 1 RESULT -->
+
+  </div>
 <!-- Akhir Container 2 -->
 
 <br></br>
 <br></br>
 
-    <!-- Container 3 -->
+<!-- Container 3 -->
     <div class="container">
+      <!-- <a href=#> Link ke html -->
+      <input type="image" name="makanan" src="img/Rekomendasi-Makanan.PNG" border="0" alt="Rekomendasi Makanan" style="width: auto;" value="Publish" align="center">
+      </a> 
 
-      <br>
-
-      <div class="container">
-        <!-- <a href=#> Link ke html -->
-        <input type="image" name="makanan" src="img/Rekomendasi-Makanan.PNG" border="0" alt="Rekomendasi Makanan" style="width: auto;" value="Publish" align="center">
-        </a> 
-
-    </div>
-    
     <br>
 
 <!-- Awal Wrapper -->
 
 <!-- Akhir Wrapper -->
+    </div> <!--(PEMBUNGKUS CONTAINER REKOMENDASI MAKANAN) -->
 
 <hr width="100%" color="black" align="center">
 
