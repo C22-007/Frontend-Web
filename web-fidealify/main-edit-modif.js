@@ -2,19 +2,20 @@ const inputUsia = document.querySelector('#inputUsia');
 const inputTinggi = document.querySelector('#inputTinggi');
 const inputBerat = document.querySelector('#inputBerat');
 
+
 const barCircular = document.querySelector('#barCircular');
 const barPercentage = document.querySelector('#barPercentage');
 
 const categoryImage = document.querySelector('#categoryImage');
 const categoryDescription = document.querySelector('#categoryDescription');
 
+
 const buttonHasil = document.querySelector('#buttonHasil');
 const buttonReset = document.querySelector('#buttonReset');
 
-const arrowSlider = document.getElementsByClassName('arrow');
+// const radioGender = document.querySelector('input[type="radio"]:checked');
 
-console.log(arrowSlider);
-
+// console.log(radioGender.value);
 
 // selected gender
 const selectGender = () => {
@@ -34,6 +35,7 @@ const calculateBodyfat = () => {
 
 // display bodyfat percentage-bar
 let counter = 0;
+
 const displayPercentage = (progress, percentage) => {
     barPercentage.innerText = `${counter}%`;
     barCircular.style.background = `conic-gradient(#3F6FF5 ${counter * 3.6}deg, #ededed 0deg)`;   
@@ -43,11 +45,17 @@ const displayPercentage = (progress, percentage) => {
     }
 }
 
-// effect loading
+// loading
 const loadingCategory = () => {
-    categoryImage.setAttribute("src", "./assets/images/loading-gif.gif");
+    categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/loading-gif.gif");
     categoryDescription.innerText = "Loading...";
 }
+
+// ready category 
+// const readyCategory = 
+
+// ./assets/images/bodyfat-male-essential.jpg
+// Essential Male
 
 // display bodyfat category
 const displayCategory = () => {
@@ -59,64 +67,64 @@ const displayCategory = () => {
     if(gender === "pria") {
         if(percentage >= 2 && percentage <= 5) {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-male-essential.jpg");
+                categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-male-essential.jpg");
                 categoryDescription.innerText = "Essential Male";
             }, 3000);
         } else if(percentage >= 6 && percentage <= 13) {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-male-athletes.jpg");
+                categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-male-athletes.jpg");
                 categoryDescription.innerText = "Athletes Male";
             }, 3000);
         } else if(percentage >= 14 && percentage <= 17) {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-male-fitness.jpg");
+                categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-male-fitness.jpg");
                 categoryDescription.innerText = "Fitness Male";
             }, 3000);
         } else if(percentage >= 18 && percentage <= 24) {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-male-average.jpg");
+                categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-male-average.jpg");
                 categoryDescription.innerText = "Average Male";
             }, 3000);
         } else if(percentage >= 25) {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-male-obese.jpg");
+                categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-male-obese.jpg");
                 categoryDescription.innerText = "Obese Male";
             }, 3000);
         } else {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-question.png");
+                categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-question.png");
                 categoryDescription.innerText = "Unknown";
             }, 3000);
         }
     } else if(gender === "wanita"){
         if(percentage >= 10 && percentage <= 13) {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-female-essential.jpg");
+                categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-female-essential.jpg");
                 categoryDescription.innerText = "Essential Female";
             }, 3000);
         } else if(percentage >= 14 && percentage <= 20) {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-female-athletes.jpg");
+                categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-female-athletes.jpg");
                 categoryDescription.innerText = "Athletes Female";
             }, 3000);
         } else if(percentage >= 21 && percentage <= 24) {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-female-fitness.jpg");
+                categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-female-fitness.jpg");
                 categoryDescription.innerText = "Fitness Female";
             }, 3000);
         } else if(percentage >= 25 && percentage <= 31) {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-female-average.jpg");
+                categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-female-average.jpg");
                 categoryDescription.innerText = "Average Female";
             }, 3000);
         } else if(percentage >= 32) {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-female-obese.jpg");
+                categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-female-obese.jpg");
                 categoryDescription.innerText = "Obese Female";
             }, 3000);
         } else {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-question.jpg");
+                categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-question.jpg");
                 categoryDescription.innerText = "Unknown";
             }, 3000);
         }
@@ -124,6 +132,7 @@ const displayCategory = () => {
 
 
 }
+
 
 
 buttonHasil.addEventListener('click', (event) => {
@@ -134,7 +143,7 @@ buttonHasil.addEventListener('click', (event) => {
        inputBerat.value == "") {
         alert('Mohon lengkapi data lebih dahulu...');
     } else {
-        // percentage-bar
+        // percentage
         const progress = setInterval(() => {
             const percentage = calculateBodyfat();
                     
@@ -147,8 +156,12 @@ buttonHasil.addEventListener('click', (event) => {
             }    
         }, 25);
 
-        // category-image
+        // category
         displayCategory();
+
+        // gender
+        
+        console.log(selectGender());
     }
 });
 
@@ -164,16 +177,27 @@ buttonReset.addEventListener('click', (event) => {
     barPercentage.textContent = '0%';
     barCircular.style.background = `conic-gradient(#3F6FF5 0deg, #ededed 0deg)`;
     
-    categoryImage.setAttribute("src", "./assets/images/bodyfat-question.png");
+    categoryImage.setAttribute("src", "../web-fidealify/src/assets/images/bodyfat-question.png");
     categoryDescription.innerText = "Not Identified";
-});
-
-arrowSlider.addEventListener('click', () => {
-    console.log('halo');
+    // article.setAttribute("hidden", true);
 });
 
 
+// const category = document.querySelector('.image-custom');
+// const article = document.querySelector('.rekomendasi-container');
 
+// const displayCategory = () => {
+//     if(calculateBodyfat() > 0 && calculateBodyfat() < 50){
+//         category.setAttribute("src", "./assets/images/bodyfat-male-average.jpg");
+//     }
+// }
 
+// const displayArticle = () => {
+//     if(article.hidden == true){
+//         article.hidden = false;
+//     } else {
+//         article.hidden = true;
+//     } 
+// }
 
 
