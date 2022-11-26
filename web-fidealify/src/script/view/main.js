@@ -168,8 +168,12 @@ buttonReset.addEventListener('click', (event) => {
     categoryDescription.innerText = "Not Identified";
 });
 
-arrowSlider.addEventListener('click', () => {
-    console.log('halo');
+arrowSlider[1].addEventListener('click', () => {
+    console.log('next');
+});
+
+arrowSlider[0].addEventListener('click', () => {
+    console.log('prev');
 });
 
 
