@@ -70,6 +70,10 @@ section {
     margin: auto;
 }
 
+.article-custom {
+    display: none;
+}
+
 .arrow {
     cursor: pointer;
     position: absolute;
@@ -90,11 +94,11 @@ section {
   }
 
 .prev {
-    left: 15rem;
+    left: 0;
 }
 
 .next {
-    right: 15rem;
+    right: 0;
 }
 
 .arrow:hover {

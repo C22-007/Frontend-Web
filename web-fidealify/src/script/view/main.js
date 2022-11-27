@@ -13,7 +13,6 @@ const buttonReset = document.querySelector('#buttonReset');
 
 const arrowSlider = document.getElementsByClassName('arrow');
 
-console.log(arrowSlider);
 
 
 // selected gender
@@ -121,9 +120,9 @@ const displayCategory = () => {
             }, 3000);
         }
     }
-
-
 }
+
+
 
 
 buttonHasil.addEventListener('click', (event) => {
@@ -168,15 +167,68 @@ buttonReset.addEventListener('click', (event) => {
     categoryDescription.innerText = "Not Identified";
 });
 
+
+
+let count = 0;
+
+const currentSlide = (n = 0) => {
+    const slides = document.getElementsByClassName('article-custom');
+    const indexSlide = document.getElementsByClassName('card-title');
+
+    // membandingkan index dari elemn vs counter (nilai parameter n)
+
+    for(let i=0; i < slides.length; i++) {  
+        if(parseInt(indexSlide[i].innerText) == n){
+            slides[i].style.display = "block";
+        }
+
+        // console.log(indexSlide[i].innerText);
+        // console.log(n);
+        // console.log(indexSlide[i].innerText == n);
+    }  
+}
+document.addEventListener('load', currentSlide());
+
+
+
+
 arrowSlider[1].addEventListener('click', () => {
-    console.log('next');
+    ++count;
+    // console.log(++count);
+
+    currentSlide(count);
+    // console.log(currentSlide(count));
 });
 
 arrowSlider[0].addEventListener('click', () => {
-    console.log('prev');
+    console.log(--count);
+
+    currentSlide(count);
 });
 
+// const slides = document.getElementsByClassName('article-custom');
+// console.log(slides.item(1));
 
+// console.log(arrowSlider);
+
+// let slideIndex = 1;
+// showSlides(slideIndex);
+// // console.log(showSlides(slideIndex));
+// let n = 1;
+// showSlides(slideIndex += n);
+
+// function showSlides(n) {
+//     const slides = document.getElementsByClassName('article-custom');
+    
+//     if (n > slides.length) {slideIndex = 1}    
+//     if (n < 1) {slideIndex = slides.length}
+
+//     for (let i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";  
+//     }
+
+//     slides[slideIndex-1].style.display = "block";
+// }
 
 
 
