@@ -175,34 +175,53 @@ const indexSlide = document.getElementsByClassName('card-title');
 
 const currentSlide = (n = 0) => {
     // membandingkan index dari elemn vs counter (nilai parameter n)
-    for(let i=0; i < slides.length; i++) {  
-        if(parseInt(indexSlide[i].innerText) == n){
-            slides[i].style.display = "block";
+    for(let index in slides) { 
+        if(index == n) {
+            slides[index].style.display = "block";
         }
     }  
 }
 document.addEventListener('load', currentSlide());
 
-arrowSlider[1].addEventListener('click', () => {
+arrowSlider[1].addEventListener('click', () => {    
     ++count;
+    console.log(count);
+
+    if(count > (slides.length-1)) { 
+        count = 0;
+        slides[slides.length-1].style.display = "none";
+    }
 
     currentSlide(count);
 
-    for(let i = 0; i < slides.length; i++) {  
-        if(parseInt(indexSlide[i].innerText) == (count-1)){
-            slides[i].style.display = "none";
+    for(let index in slides) {  
+        if(index == (count-1)){
+            slides[index].style.display = "none";
         }
     }
 });
 
 arrowSlider[0].addEventListener('click', () => {
     --count;
+    console.log(count);
+
+    if (count < 0) {
+        count = slides.length-1;
+        // slides[0].style.display = "none";
+        // slides[1].style.display = "none";
+    }
+    // if(count > (slides.length-1)) { 
+    //     count = 0;
+    //     slides[slides.length-1].style.display = "none";
+    // }
+
 
     currentSlide(count);
 
-    for(let i = 0; i < slides.length; i++) {  
-        if(parseInt(indexSlide[i].innerText) == (count+1)){
-            slides[i].style.display = "none";
+    for(let index in slides) {  
+        // console.log(count-1);
+        if(index == count-1) {
+            slides[index].style.display = "none";
         }
     }
 });
