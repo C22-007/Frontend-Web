@@ -104,3 +104,13 @@ section {
 .arrow:hover {
     color: rgba(150,150,150,0.8);
 }
+
+.fade-custom {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }

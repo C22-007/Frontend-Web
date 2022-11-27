@@ -170,40 +170,41 @@ buttonReset.addEventListener('click', (event) => {
 
 
 let count = 0;
+const slides = document.getElementsByClassName('article-custom');
+const indexSlide = document.getElementsByClassName('card-title');
 
 const currentSlide = (n = 0) => {
-    const slides = document.getElementsByClassName('article-custom');
-    const indexSlide = document.getElementsByClassName('card-title');
-
     // membandingkan index dari elemn vs counter (nilai parameter n)
-
     for(let i=0; i < slides.length; i++) {  
         if(parseInt(indexSlide[i].innerText) == n){
             slides[i].style.display = "block";
         }
-
-        // console.log(indexSlide[i].innerText);
-        // console.log(n);
-        // console.log(indexSlide[i].innerText == n);
     }  
 }
 document.addEventListener('load', currentSlide());
 
-
-
-
 arrowSlider[1].addEventListener('click', () => {
     ++count;
-    // console.log(++count);
 
     currentSlide(count);
-    // console.log(currentSlide(count));
+
+    for(let i = 0; i < slides.length; i++) {  
+        if(parseInt(indexSlide[i].innerText) == (count-1)){
+            slides[i].style.display = "none";
+        }
+    }
 });
 
 arrowSlider[0].addEventListener('click', () => {
-    console.log(--count);
+    --count;
 
     currentSlide(count);
+
+    for(let i = 0; i < slides.length; i++) {  
+        if(parseInt(indexSlide[i].innerText) == (count+1)){
+            slides[i].style.display = "none";
+        }
+    }
 });
 
 // const slides = document.getElementsByClassName('article-custom');
