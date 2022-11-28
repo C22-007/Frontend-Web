@@ -205,11 +205,11 @@ arrowSlider[0].addEventListener('click', () => {
     --count;
     console.log(count);
 
-    if (count < 0) {
-        count = slides.length-1;
-        // slides[0].style.display = "none";
-        // slides[1].style.display = "none";
-    }
+    // if (count < 0) {
+    //     count = slides.length-1;
+    //     // slides[0].style.display = "none";
+    //     // slides[1].style.display = "none";
+    // }
     // if(count > (slides.length-1)) { 
     //     count = 0;
     //     slides[slides.length-1].style.display = "none";
