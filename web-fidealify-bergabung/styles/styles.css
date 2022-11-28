@@ -17,3 +17,10 @@ body {
 head-bar {
     display: block;
 }
+
+.atas {
+    background-color: #3F6FF5;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    color: white;
+}

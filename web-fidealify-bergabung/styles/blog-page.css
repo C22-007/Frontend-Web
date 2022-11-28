@@ -11,12 +11,12 @@
 } */
 
 /* Atas Navbar */
-.atas {
+/* .atas {
     background-color: #3F6FF5;
     padding-bottom: 17px;
     padding-top: 10px;
     color: white;
-}
+} */
 
 /* Jumbotron */
 .jumbotron {
@@ -202,8 +202,8 @@
 
 
     .nav-link {
-    text-transform: uppercase;
-    margin-right: 30px;
+        text-transform: uppercase;
+        /* margin-right: 30px; */
     }
 
     .nav-link:hover::after {

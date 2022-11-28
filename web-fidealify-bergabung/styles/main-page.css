@@ -2,6 +2,13 @@ section {
     padding: 2rem;
 }
 
+.title-main-custom {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+}
+
 /* timbang */
 .form-container {
     background-color: #ddd;
@@ -17,6 +24,8 @@ section {
 .btn-reset-custom {
     width: 100%;
     border-radius: 1.2rem;
+    background-color: black;
+    border: 1px solid black;
 }
 
 .bar-container {

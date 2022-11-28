@@ -21,20 +21,20 @@ class FootBar extends HTMLElement {
               <div class="col-md-4 footer-nav animated fadeInRight">
                   <h4>Menu —</h4>
                   <div class="col-md-2">
-                        <ul class="pages">                  
-                          <li><a href="/../4. input/input.html">Timbang</a></li>
-                          <li><a href="../../../Frontend-Web/web-fidealify/src/index.html">Beranda</a></li>
-                          <li><a href="../2. blog/blog.html">Blog</a></li>
-                          <li><a href="/../3. about us/about-us.html">Tentang Kami</a></li>
+                        <ul class="pages">                    
+                          <li><a href="index.html">Beranda</a></li>
+                          <li><a href="main.html">Timbang</a></li>
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="about.html">Tentang Kami</a></li>
                         </ul>
                     </div>
                 </div>
               <div class="col-2 footer-social animated fadeInDown">
                   <h4>Follow Us</h4>
                   <ul>
-                      <li><a href="https://id-id.facebook.com/login/device-based/regular/login/?login_attempt=1">Facebook</a></li>
-                      <li><a href="https://twitter.com/login">Twitter</a></li>
-                      <li><a href="https://www.instagram.com/">Instagram</a></li>
+                      <li><a href="https://id-id.facebook.com/login/device-based/regular/login/?login_attempt=1" target="_blank">Facebook</a></li>
+                      <li><a href="https://twitter.com/login" target="_blank">Twitter</a></li>
+                      <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
                     </ul>
                 </div>
               <div class="col-md-3 footer-ns animated fadeInRight">
