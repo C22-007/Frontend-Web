@@ -1,0 +1,19 @@
+@import "head-bar.css";
+@import "home-page.css";
+@import "main-page.css";
+@import "blog-page.css";
+@import "about-page.css";
+@import "foot-bar.css";
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+}
+
+head-bar {
+    display: block;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIdealify - Bodyfat Measure</title>
+    <!-- <link rel="stylesheet" href="./assets/fontawesome/css/all.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="icon" href="./assets/images/image-blog/Fi-logo-small.png">
+
+</head>
+<body>
+    <header>
+        <head-bar></head-bar>
+    </header>
+    
+    <main>
+        <!-- timbang -->
+        <section class="timbang-area mt-3">
+            <div class="row timbang-title">
+                <div class="col-sm-12">
+                    <h3 class="text-center fw-bold">Timbang</h3>
+                </div>
+            </div>
+
+            <div class="row timbang-container">
+                <div class="col-sm-8 col-md-8 col-lg-8 offset-sm-2 offset-md-2 offset-lg-2">
+                    <div class="row mt-3 form-container">
+                        <div class="col-sm-5 offset-sm-1">
+                            <form class="form-custom">
+                                <div class="row mb-3">
+                                    <label for="inputUsia" class="col-sm-2 col-form-label">Usia</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control input-custom" id="inputUsia" min="0" max="100">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputTinggi" class="col-sm-2 col-form-label">Tinggi</label>
+                                    <div class="col-sm-10">
+                                        <input type="input" class="form-control input-custom" id="inputTinggi" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputBerat" class="col-sm-2 col-form-label">Berat</label>
+                                    <div class="col-sm-10">
+                                        <input type="input" class="form-control input-custom" id="inputBerat" >
+                                    </div>
+                                </div>
+                                <fieldset class="row mb-3">
+                                    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="pria" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                Pria
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="wanita">
+                                            <label class="form-check-label" for="gridRadios2">
+                                                Wanita
+                                        </label>
+                                    </div>
+                                </fieldset>
+
+                                <div class="row">
+                                    <div class="col-sm-5 offset-sm-2 mt-2">
+                                        <button class="btn btn-primary btn-hasil-custom" id="buttonHasil">Hasil</button>
+                                    </div>
+                                    <div class="col-sm-5 mt-2">
+                                        <button class="btn btn-primary btn-reset-custom" id="buttonReset">Reset</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+            
+                        <div class="col-sm-5">              
+                            <div class="bar-container">
+                                <div class="bar-circular" id="barCircular">
+                                    <span class="bar-percentage" id="barPercentage">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div id="result"></div> -->
+        
+        
+        <!-- rentang -->
+        <section class="rentang-area">
+            <div class="row rentang-title">
+                <div class="col-sm-12">
+                    <h3 class="text-center fw-bold">Rentang (%)</h3>
+                </div>
+            </div>
+
+            <div class="row rentang-container">
+                <div class="col-sm-8 offset-sm-2">
+                    <img src="./assets/images/bodyfat-question.png" alt="bodyfat-category" id="categoryImage" class="rounded mx-auto d-block image-custom" style="height: 300px;">
+                    <h3 id="categoryDescription" class="text-center mt-3">Not Identified</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- rekomendasi makanan -->
+        <section class="rekomendasi-area mt-5">
+            <div class="row rekomendasi-title">
+                <div class="col-sm-12">
+                    <h3 class="text-center fw-bold">Rekomendasi Makanan</h3>
+                </div>
+            </div>
+
+            <div class="row col-sm-6 rekomendasi-container">
+
+                <div class="card fade-custom article-custom mb-3 mt-4">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./assets/images/bodyfat-table.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">0</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eveniet. Id iure placeat dicta nisi eius quibusdam exercitationem temporibus necessitatibus itaque quasi cumque molestiae, quod illum voluptas magnam mollitia omnis.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card fade-custom article-custom mb-3 mt-4">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./assets/images/bodyfat-table.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">1</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eveniet. Id iure placeat dicta nisi eius quibusdam exercitationem temporibus necessitatibus itaque quasi cumque molestiae, quod illum voluptas magnam mollitia omnis.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card fade-custom article-custom mb-3 mt-4">
+                    <div class="row g-0">
+                      <div class="col-md-4"> 
+                        <img src="./assets/images/bodyfat-table.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">2</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eveniet. Id iure placeat dicta nisi eius quibusdam exercitationem temporibus necessitatibus itaque quasi cumque molestiae, quod illum voluptas magnam mollitia omnis.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <span class="prev arrow">&#10094;</span>
+                <span class="next arrow">&#10095;</span>
+
+                <!-- <div class="col-sm-8 offset-sm-2">
+                    <div class="row mt-3 background-container">
+                        <div class="col-sm-5 offset-sm-1">
+                            <img src="./assets/images/bodyfat-table.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-sm-5">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus dolor mollitia recusandae autem laborum deleniti magni nemo fuga ratione at, qui perferendis itaque! Totam neque, perspiciatis omnis quia consequatur vitae.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At natus a doloribus ipsa exercitationem. Modi nam aliquid neque, dolor, recusandae enim animi necessitatibus, similique labore numquam iusto voluptatem nemo sint.</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <foot-bar></foot-bar>
+    </footer>
+
+    <!-- <script src="./assets/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  
+    <script src="./app.js" type="module"></script>
+</body>
+</html>
