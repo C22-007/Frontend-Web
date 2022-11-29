@@ -156,7 +156,6 @@ buttonHasil.addEventListener('click', (event) => {
     } else {
         // percentage-bar
         const progress = setInterval(() => {
-            console.log(calculateBodyfat());
             const percentage = calculateBodyfat();
 
             if(percentage > counter) {
@@ -189,61 +188,108 @@ buttonReset.addEventListener('click', (event) => {
 
 
 
-let count = 0;
-const slides = document.getElementsByClassName('article-custom');
-const indexSlide = document.getElementsByClassName('card-title');
-
-const currentSlide = (n = 0) => {
-    // membandingkan index dari elemn vs counter (nilai parameter n)
-    for(let index in slides) { 
-        if(index == n) {
-            slides[index].style.display = "block";
-        }
-    }  
-}
-document.addEventListener('load', currentSlide());
-
-arrowSlider[1].addEventListener('click', () => {    
-    ++count;
-
-    if(count > (slides.length-1)) { 
-        count = 0;
-        slides[slides.length-1].style.display = "none";
-    }
-
-    currentSlide(count);
-
-    for(let index in slides) {  
-        if(index == (count-1)){
-            slides[index].style.display = "none";
-        }
-    }
-});
-
-arrowSlider[0].addEventListener('click', () => {
-    --count;
-    console.log(count);
-
-    // if (count < 0) {
-    //     count = slides.length-1;
-    //     // slides[0].style.display = "none";
-    //     // slides[1].style.display = "none";
-    // }
-    // if(count > (slides.length-1)) { 
-    //     count = 0;
-    //     slides[slides.length-1].style.display = "none";
-    // }
 
 
-    currentSlide(count);
+// const slides = document.getElementsByClassName('article-custom');
+// const currentSlide = (n = 0) => {
+//     // membandingkan index dari elemn vs counter (nilai parameter n)
+//     for(let index in slides) {
+//         if(index == n) {
+//             slides[index].style.display = "block";
+//         } 
+//     }  
+// }
+// document.addEventListener('load', currentSlide());
 
-    for(let index in slides) {  
-        // console.log(count-1);
-        if(index == count-1) {
-            slides[index].style.display = "none";
-        }
-    }
-});
+// let next = 0;
+// arrowSlider[1].addEventListener('click', () => {    
+//     next++;
+
+//     console.log(next);
+
+//     if(next > (slides.length - 1)) { 
+//         next = 0;
+//         slides[slides.length-1].style.display = "none";
+//     }
+
+//     currentSlide(next);
+
+//     for(let index in slides) {  
+//         if(index == (next - 1)) {
+//             slides[index].style.display = "none";
+//         }
+//     }
+// });
+
+// let prev = 0;
+// arrowSlider[0].addEventListener('click', () => {
+//     prev--; 
+
+//     if(next > prev) { next--
+    
+//     };
+
+
+
+//     console.log(next++);
+// });
+
+// let prev = slides.length;
+// arrowSlider[0].addEventListener('click', () => {
+//     --prev;
+//     next = slides.length - 1;
+//     console.log(next);
+
+//     if(prev < 0) { 
+//         prev = slides.length - 1;
+//     }
+
+//     if(next == 1){ prev = next - 1}
+
+//     currentSlide(prev);
+
+//     for(let index in slides) {  
+//         if(index == prev+1) {
+//             slides[index].style.display = "none";
+//         } 
+//     }
+// });
+
+
+
+
+
+// let slideIndex = 1;
+// showSlides(slideIndex);
+
+// // Next/previous controls
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("article-custom");
+
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+
+//   slides[slideIndex-1].style.display = "block";
+// }
+
+
+
+
+
+
 
 
 
