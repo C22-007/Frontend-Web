@@ -1,0 +1,6 @@
+Senin, 28/11/2022
+- Navbar yang ukuran huruf berbeda antara home-main dan about-blog
+- Footer yang ukuran dimensi berbeda di blog
+- Foto Berempat di Blog
+- Artikel Rekomendasi Makanan
+- Bug di kalkulator & Rekomendasi

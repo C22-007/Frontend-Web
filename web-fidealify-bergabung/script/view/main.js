@@ -22,13 +22,36 @@ const selectGender = () => {
     return radioGender.value;
 }
 
+
 // bodyfat calculate 
 const calculateBodyfat = () => {
-    let result = 0;
-    result = parseInt(inputUsia.value) + parseInt(inputTinggi.value) + parseInt(inputBerat.value);
+    let BMI = 0;
+    let BFP = 0;
 
-    return result;
+    const gender = selectGender();
+    const usia = parseInt(inputUsia.value);
+    const berat = parseInt(inputBerat.value);
+    const tinggi = parseInt(inputTinggi.value) / 100;
+
+    // Body Mass Index
+    BMI = berat / (tinggi * tinggi);
+
+    // Body Fat Percentage
+    if(gender === "pria") {
+        BFP = (1.20 * BMI) + (0.23 * usia) - 16.2;
+    } else if(gender === "wanita") {
+        BFP = (1.20 * BMI) + (0.23 * usia) - 5.4;
+    }
+    BFP = Math.floor(BFP);
+
+    // Validate Result
+    if(BFP > 100 || BFP < 0) {
+        BFP = 0;
+    }
+
+    return BFP;
 }
+
 
 
 // display bodyfat percentage-bar
@@ -115,7 +138,7 @@ const displayCategory = () => {
             }, 3000);
         } else {
             setTimeout(() => {
-                categoryImage.setAttribute("src", "./assets/images/bodyfat-question.jpg");
+                categoryImage.setAttribute("src", "./assets/images/bodyfat-question.png");
                 categoryDescription.innerText = "Unknown";
             }, 3000);
         }
@@ -128,22 +151,22 @@ const displayCategory = () => {
 buttonHasil.addEventListener('click', (event) => {
     event.preventDefault();
 
-    if(inputUsia.value == "" || 
-       inputTinggi.value == "" || 
-       inputBerat.value == "") {
+    if(inputUsia.value == "" || inputTinggi.value == "" || inputBerat.value == "") {
         alert('Mohon lengkapi data lebih dahulu...');
     } else {
         // percentage-bar
         const progress = setInterval(() => {
+            console.log(calculateBodyfat());
             const percentage = calculateBodyfat();
-                    
+
             if(percentage > counter) {
                 counter++;
                 displayPercentage(progress, percentage);
             } else {
                 counter--;
                 displayPercentage(progress, percentage);
-            }    
+            }
+                
         }, 25);
 
         // category-image
@@ -153,16 +176,13 @@ buttonHasil.addEventListener('click', (event) => {
 
 buttonReset.addEventListener('click', (event) => {
     event.preventDefault();
-    
-    counter = 0;
 
+    counter = 0;
     inputUsia.value = '';
     inputTinggi.value = '';
     inputBerat.value = '';
-    
     barPercentage.textContent = '0%';
     barCircular.style.background = `conic-gradient(#3F6FF5 0deg, #ededed 0deg)`;
-    
     categoryImage.setAttribute("src", "./assets/images/bodyfat-question.png");
     categoryDescription.innerText = "Not Identified";
 });
@@ -185,7 +205,6 @@ document.addEventListener('load', currentSlide());
 
 arrowSlider[1].addEventListener('click', () => {    
     ++count;
-    console.log(count);
 
     if(count > (slides.length-1)) { 
         count = 0;
@@ -226,29 +245,7 @@ arrowSlider[0].addEventListener('click', () => {
     }
 });
 
-// const slides = document.getElementsByClassName('article-custom');
-// console.log(slides.item(1));
 
-// console.log(arrowSlider);
-
-// let slideIndex = 1;
-// showSlides(slideIndex);
-// // console.log(showSlides(slideIndex));
-// let n = 1;
-// showSlides(slideIndex += n);
-
-// function showSlides(n) {
-//     const slides = document.getElementsByClassName('article-custom');
-    
-//     if (n > slides.length) {slideIndex = 1}    
-//     if (n < 1) {slideIndex = slides.length}
-
-//     for (let i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";  
-//     }
-
-//     slides[slideIndex-1].style.display = "block";
-// }
 
 
 
