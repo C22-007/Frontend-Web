@@ -188,102 +188,39 @@ buttonReset.addEventListener('click', (event) => {
 
 
 
+let slideNum = 1;
+showSlides(slideNum);
 
+arrowSlider[1].addEventListener('click', () => {
+    showSlides(slideNum += 1);
+});
 
-// const slides = document.getElementsByClassName('article-custom');
-// const currentSlide = (n = 0) => {
-//     // membandingkan index dari elemn vs counter (nilai parameter n)
-//     for(let index in slides) {
-//         if(index == n) {
-//             slides[index].style.display = "block";
-//         } 
-//     }  
-// }
-// document.addEventListener('load', currentSlide());
+arrowSlider[0].addEventListener('click', () => {
+    showSlides(slideNum += -1);
+});
 
-// let next = 0;
-// arrowSlider[1].addEventListener('click', () => {    
-//     next++;
-
-//     console.log(next);
-
-//     if(next > (slides.length - 1)) { 
-//         next = 0;
-//         slides[slides.length-1].style.display = "none";
-//     }
-
-//     currentSlide(next);
-
-//     for(let index in slides) {  
-//         if(index == (next - 1)) {
-//             slides[index].style.display = "none";
-//         }
-//     }
-// });
-
-// let prev = 0;
-// arrowSlider[0].addEventListener('click', () => {
-//     prev--; 
-
-//     if(next > prev) { next--
+function showSlides(x) {    
+    let slides = document.getElementsByClassName("article-custom");
     
-//     };
+    console.log(x);
 
+    if (x > slides.length) {
+        slideNum = 1
+    }    
+    if (x < 1) {
+        slideNum = slides.length
+    }
 
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
 
-//     console.log(next++);
-// });
-
-// let prev = slides.length;
-// arrowSlider[0].addEventListener('click', () => {
-//     --prev;
-//     next = slides.length - 1;
-//     console.log(next);
-
-//     if(prev < 0) { 
-//         prev = slides.length - 1;
-//     }
-
-//     if(next == 1){ prev = next - 1}
-
-//     currentSlide(prev);
-
-//     for(let index in slides) {  
-//         if(index == prev+1) {
-//             slides[index].style.display = "none";
-//         } 
-//     }
-// });
+    slides[slideNum-1].style.display = "block";  
+}
 
 
 
 
-
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   let i;
-//   let slides = document.getElementsByClassName("article-custom");
-
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-
-//   slides[slideIndex-1].style.display = "block";
-// }
 
 
 

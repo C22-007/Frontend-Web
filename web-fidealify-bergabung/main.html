@@ -171,8 +171,8 @@
                     </div>
                 </div>
 
-                <span class="prev arrow" onclick="plusSlides(-1)">&#10094;</span>
-                <span class="next arrow" onclick="plusSlides(1)">&#10095;</span>
+                <span class="prev arrow">&#10094;</span>
+                <span class="next arrow">&#10095;</span>
 
                 <!-- <div class="col-sm-8 offset-sm-2">
                     <div class="row mt-3 background-container">
@@ -200,34 +200,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   
     <script src="./app.js" type="module"></script>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
+    <!-- <script>
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // function currentSlide(n) {
-        //     showSlides(slideIndex = n);
-        // }
-
-        function showSlides(n) {
-        console.log(n);
-        let i;
-        let slides = document.getElementsByClassName("article-custom");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        // for (i = 0; i < dots.length; i++) {
-        //     dots[i].className = dots[i].className.replace(" active", "");
-        // }
-        slides[slideIndex-1].style.display = "block";  
-        // dots[slideIndex-1].className += " active";
-        }
-    </script>
+    </script> -->
 </body>
 </html>

@@ -20,7 +20,7 @@
 
 /* Jumbotron */
 .jumbotron {
-    background-image: url(img/banners.jpg);
+    /* background-image: url(img/banners.jpg); */
     background-size: cover;
     height: 640px;
     margin-top: -98px;

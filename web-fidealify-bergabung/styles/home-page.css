@@ -1,7 +1,6 @@
 .title-custom {
     font-size: 2.1em;
     font-weight: bold;
-    /* color: #3F6FF5; */
 }
 
 .paragraph-custom {
@@ -22,8 +21,64 @@
     border: 0.3em solid black;
 }
 
+@media screen and (max-width: 640px) {
+    main {
+        margin: 0 auto;
+    }
+    .title-custom {
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    .paragraph-custom {
+        text-align: center;
+    }
+    .btn-custom {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .nav-link {
+        text-align: center;
+    }
+    .footer-brand, 
+    .footer-nav,
+    .footer-social,
+    .footer-ns    {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .col-2 {
+        max-width: none;
+    }
+}
 
-
-/* .flex-main-custom {
-    align-items: center;
-} */
+@media screen and (max-width: 1007px) {
+    .col-sm-5 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .offset-sm-1 {
+        margin-left: 0%;
+    }
+    .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .title-custom {
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    .paragraph-custom {
+        text-align: center;
+    }
+    .btn-custom {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .nav-link {
+        text-align: center;
+    }
+}
