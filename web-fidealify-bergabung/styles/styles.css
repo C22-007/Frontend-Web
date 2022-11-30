@@ -24,3 +24,86 @@ head-bar {
     padding-top: 0.3rem;
     color: white;
 }
+
+@media screen and (max-width: 640px) {
+    img {
+        width: 100%;
+    }
+    main {
+        margin: 0 auto;
+    }
+    .title-custom {
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    .paragraph-custom {
+        text-align: center;
+    }
+    .btn-custom {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .nav-link {
+        text-align: center;
+    }
+    .footer-brand, 
+    .footer-nav,
+    .footer-social,
+    .footer-ns    {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .col-2 {
+        max-width: none;
+    }
+
+    .title-main-custom {
+        width: 100%;
+    }
+    .bar-container {
+        margin-top: 1.2rem;
+    }
+}
+
+/* responsive */
+@media screen and (max-width: 1007px) {
+    img {
+        width: 100%;
+    }
+    .col-sm-5 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .offset-sm-1 {
+        margin-left: 0%;
+    }
+    .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .btn-col-custom {
+        margin-left: 0%;
+    }
+    .form-check {
+        display: inline;
+        margin-left: 6rem;
+    }
+    .title-custom {
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    .paragraph-custom {
+        text-align: center;
+    }
+    .btn-custom {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .nav-link {
+        text-align: center;
+    }
+}
