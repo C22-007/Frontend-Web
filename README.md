@@ -30,6 +30,14 @@ deployed on: <!--link heroku / hosting-->
 			<img width="300" alt="render-one" src="https://github.com/C22-007/Frontend-Web/blob/main/4-page-Fidealify/Blog.png">
 		</td>
 	</tr>
+		<thead>
+		<td>
+			<b>About Us</b>
+		</td>
+		<td>
+			<b>Measure</b>
+		</td>
+	</thead>
 	<tr>
 		<td>
 			<img width="381" alt="code-two" src="https://github.com/C22-007/Frontend-Web/blob/main/4-page-Fidealify/About.png">
@@ -41,8 +49,13 @@ deployed on: <!--link heroku / hosting-->
 </table>
 
 ## Demo Penggunaan
-insert: <!--video-->
-[![Alternate Text]({[image-url](https://github.com/C22-007/Frontend-Web/blob/main/4-page-Fidealify/thumbnail%20video.JPG)})]({https://www.youtube.com/watch?v=aTx6s5Vhac0} "Demo")
+insert: <!--videonya nya di drag and drop aja--> <
+
+
+https://user-images.githubusercontent.com/107310486/204697158-64c2e07c-e133-44f3-81d2-d645f4439aa5.mp4
+
+
+
 
 ## Credit & License
 ex: Illustration by Rizqi Alpiansyah
