@@ -42,7 +42,7 @@ deployed on: <!--link heroku / hosting-->
 
 ## Demo Penggunaan
 insert: <!--video-->
-[![Watch the video]([https://github.com/C22-007/Frontend-Web/blob/main/4-page-Fidealify/thumbnail%20video.JPG])](https://www.youtube.com/watch?v=aTx6s5Vhac0)
+[![Alternate Text]({[image-url](https://github.com/C22-007/Frontend-Web/blob/main/4-page-Fidealify/thumbnail%20video.JPG)})]({https://www.youtube.com/watch?v=aTx6s5Vhac0} "Demo")
 
 ## Credit & License
 ex: Illustration by Rizqi Alpiansyah
