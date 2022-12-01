@@ -132,102 +132,12 @@
     margin: 30px 0;
 }
 
-/* Search Box*/
-
-
-/* footer */
-.footer-bs {
-    background-color: white;
-	padding: 60px 40px;
-	color: #222222;
-	margin-bottom: 20px;
-	border-bottom-right-radius: 6px;
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 6px;
-}
-.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
-.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
-.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
-.footer-bs .footer-brand p { font-size:12px; color:#222222; }
-
-.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
-.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
-.footer-bs .footer-nav ul.pages a { color:#080808; font-weight:bold; text-transform:uppercase; }
-.footer-bs .footer-nav ul.pages a:hover { color:rgba(94, 94, 94, 0.8); text-decoration:none; }
-.footer-bs .footer-nav h4 {
-	font-size: 11px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	margin-bottom:10px;
-}
-
-.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
-.footer-bs .footer-nav ul.list li { padding:5px 0px;}
-.footer-bs .footer-nav ul.list a { color:#1b1b1b; }
-.footer-bs .footer-nav ul.list a:hover { color:#000000; text-decoration:none; }
-
-.footer-bs .footer-social ul { list-style:none; padding:0px; }
-.footer-bs .footer-social h4 {
-	font-size: 11px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-}
-.footer-bs .footer-social li { padding:5px 4px;}
-.footer-bs .footer-social a { color:#181818;}
-.footer-bs .footer-social a:hover { color:#1e1e1e; text-decoration:none; }
-
-.footer-bs .footer-ns h4 {
-	font-size: 11px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	margin-bottom:10px;
-}
-.footer-bs .footer-ns p { font-size:12px; color:#101010; }
-
-@media (min-width: 768px) {
-	.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px #acacac; }
-}
-
-
-/* Utility */
 
 
 
-/* Desktop Version */
-@media (min-width: 992px) {
-    .nav-link {
-        color: black !important;
-        /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); */
-    }
 
 
 
-    .nav-link {
-    text-transform: uppercase;
-    margin-right: 30px;
-    }
-
-    .nav-link:hover::after {
-        content: '';
-        display: block;
-        border-bottom: 3px solid #0b63dc;
-        width: 50%;
-        margin: auto;
-        padding-bottom: 5px;
-        margin-bottom: -8px;
-    }
-
-    .jumbotron {
-        margin-top: -98px;
-    }
-
-    .workspace {
-        text-align: left;
-    }
-
-    .testimoni h5 {
-        font-size: 32px;
-    }
 
 
 /* OUR TEAM */

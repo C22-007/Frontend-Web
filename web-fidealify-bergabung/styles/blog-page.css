@@ -1,78 +1,53 @@
-/* Navbar */
-/* .navbar-brand {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 32px;
-}
-
-.nav-link {
-    font-weight: bold;
-    font-family: 'League Spartan', sans-serif;
-    font-size: large;
-} */
-
-/* Atas Navbar */
-/* .atas {
-    background-color: #3F6FF5;
-    padding-bottom: 17px;
-    padding-top: 10px;
-    color: white;
-} */
-
-/* Jumbotron */
+/* jumbotron */
 .jumbotron {
-    /* background-image: url(img/banners.jpg); */
     background-size: cover;
     height: 640px;
     margin-top: -98px;
 }
 
-/*Search Bar*/
+/* search-bar*/
 #myInput {
     background-image: url('../assets/images/image-blog/Search-23x23.png');
-    background-position: 19px 12px; /* posisi search icon */
+    background-position: 19px 12px; 
     background-repeat: no-repeat;
     width: 100%;
     font-family: 'League Spartan';
-    font-size: 19px; /* Increase font-size */
-    padding: 12px 20px 12px 65px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-  }
-  
-  #myUL {
-    /* Remove default list styling */
+    font-size: 19px;
+    padding: 12px 20px 12px 65px;
+    border: 1px solid #ddd; 
+    margin-bottom: 12px;
+}
+#myUL {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  
-  #myUL li a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: rgb(125, 125, 125); /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
+} 
+#myUL li a {
+    border: 1px solid #ddd; 
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(125, 125, 125);
+    display: block;
     font-family: 'League Spartan';
     font-weight: bolder;
-  }
-  
-  #myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
+}
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+}
 
-/*image hari ini*/
+/* image-timeline */
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
+}
 
 
-/* Info Panel */
+/* info-panel */
 .info-panel {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
     border-radius: 12px;
@@ -80,21 +55,18 @@
     padding: 30px;
     margin-top: -100px;
 }
-
 .info-panel img {
     width: 80px;
     height: 80px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
-
 .info-panel h4 {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 5px;
 }
-
 .info-panel p {
     font-size: 14px;
     color: #acacac;
@@ -107,18 +79,15 @@
     margin-top: 120px;
     text-align: center;
 }
-
 .workspace h3 {
     font-size: 52px;
     font-weight: 200;
     text-transform: uppercase;
     margin-top: 30px;
 }
-
 .workspace h3 span {
     font-weight: 500;
 }
-
 .workspace p {
     font-size: 18px;
     color: #acacac;
@@ -126,105 +95,3 @@
     margin: 30px 0;
 }
 
-/* Search Box*/
-
-
-
-
-
-
-
-/* footer */
-.footer-bs {
-    background-color: white;
-	padding: 60px 40px;
-	color: #222222;
-	margin-bottom: 20px;
-	border-bottom-right-radius: 6px;
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 6px;
-}
-.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
-.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
-.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
-.footer-bs .footer-brand p { font-size:12px; color:#222222; }
-
-.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
-.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
-.footer-bs .footer-nav ul.pages a { color:#080808; font-weight:bold; text-transform:uppercase; }
-.footer-bs .footer-nav ul.pages a:hover { color:rgba(94, 94, 94, 0.8); text-decoration:none; }
-.footer-bs .footer-nav h4 {
-	font-size: 11px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	margin-bottom:10px;
-}
-
-.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
-.footer-bs .footer-nav ul.list li { padding:5px 0px;}
-.footer-bs .footer-nav ul.list a { color:#1b1b1b; }
-.footer-bs .footer-nav ul.list a:hover { color:#000000; text-decoration:none; }
-
-.footer-bs .footer-social ul { list-style:none; padding:0px; }
-.footer-bs .footer-social h4 {
-	font-size: 11px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-}
-.footer-bs .footer-social li { padding:5px 4px;}
-.footer-bs .footer-social a { color:#181818;}
-.footer-bs .footer-social a:hover { color:#1e1e1e; text-decoration:none; }
-
-.footer-bs .footer-ns h4 {
-	font-size: 11px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	margin-bottom:10px;
-}
-.footer-bs .footer-ns p { font-size:12px; color:#101010; }
-
-@media (min-width: 768px) {
-	.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px #acacac; }
-}
-
-
-/* Utility */
-
-
-
-/* Desktop Version */
-@media (min-width: 992px) {
-    .nav-link {
-        color: black !important;
-        /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); */
-    }
-
-
-
-    .nav-link {
-        text-transform: uppercase;
-        /* margin-right: 30px; */
-    }
-
-    .nav-link:hover::after {
-        content: '';
-        display: block;
-        border-bottom: 3px solid #0b63dc;
-        width: 50%;
-        margin: auto;
-        padding-bottom: 5px;
-        margin-bottom: -8px;
-    }
-
-    .jumbotron {
-        margin-top: -98px;
-    }
-
-    .workspace {
-        text-align: left;
-    }
-
-    .testimoni h5 {
-        font-size: 32px;
-    }
-}

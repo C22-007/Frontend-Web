@@ -1,4 +1,4 @@
-/* Navbar */
+/* navbar */
 .navbar-brand {
     font-family: 'League Spartan', sans-serif;
     font-size: 32px;
@@ -10,27 +10,15 @@
     font-size: large;
 }
 
-/* Atas Navbar */
-/* .atas {
-    background-color: #3F6FF5;
-    padding-bottom: 17px;
-    padding-top: 10px;
-    color: white;
-} */
-
+/* desktop-version */
 @media (min-width: 992px) {
     .nav-link {
         color: black !important;
-        /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); */
     }
-
-
-
     .nav-link {
         text-transform: uppercase;
         margin-right: 30px;
     }
-
     .nav-link:hover::after {
         content: '';
         display: block;
@@ -40,15 +28,12 @@
         padding-bottom: 5px;
         margin-bottom: -8px;
     }
-
     .jumbotron {
         margin-top: -98px;
     }
-
     .workspace {
         text-align: left;
     }
-
     .testimoni h5 {
         font-size: 32px;
     }
