@@ -28,6 +28,7 @@ head-bar {
 @media screen and (max-width: 640px) {
     img {
         width: 100%;
+        height: auto !important;
     }
     main {
         margin: 0 auto;
@@ -70,6 +71,7 @@ head-bar {
 @media screen and (max-width: 1007px) {
     img {
         width: 100%;
+        height: auto !important;
     }
     .col-sm-5 {
         -ms-flex: 0 0 100%;
