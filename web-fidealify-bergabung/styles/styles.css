@@ -25,10 +25,68 @@ head-bar {
     color: white;
 }
 
+/* responsive */
+@media screen and (max-width: 1007px) {
+    img {
+        width: 100%;
+        height: auto !important;
+    }
+    .image-custom {
+        width: 200px;
+    }
+    main {
+        margin: 0 auto;
+    }
+    .title-main-custom {
+        width: 50%;
+    }
+    .col-sm-5 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .offset-sm-1 {
+        margin-left: 0%;
+    }
+    .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .btn-col-custom {
+        margin-left: 0%;
+    }
+    .form-check {
+        display: inline;
+        margin-left: 4rem;
+    }
+    .title-custom {
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    .paragraph-custom {
+        text-align: center;
+    }
+    .btn-custom {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .nav-link {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 640px) {
     img {
         width: 100%;
         height: auto !important;
+    }
+    .image-custom {
+        width: 200px;
+    }
+    .logo-footer-custom {
+        width: 100px;
     }
     main {
         margin: 0 auto;
@@ -64,48 +122,5 @@ head-bar {
     }
     .bar-container {
         margin-top: 1.2rem;
-    }
-}
-
-/* responsive */
-@media screen and (max-width: 1007px) {
-    img {
-        width: 100%;
-        height: auto !important;
-    }
-    .col-sm-5 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .offset-sm-1 {
-        margin-left: 0%;
-    }
-    .col-sm-6 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .btn-col-custom {
-        margin-left: 0%;
-    }
-    .form-check {
-        display: inline;
-        margin-left: 6rem;
-    }
-    .title-custom {
-        text-align: center;
-        margin-top: 1.2rem;
-    }
-    .paragraph-custom {
-        text-align: center;
-    }
-    .btn-custom {
-        display: block;
-        width: 50%;
-        margin: 0 auto;
-    }
-    .nav-link {
-        text-align: center;
     }
 }
