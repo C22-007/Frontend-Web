@@ -4,6 +4,7 @@
 @import "blog-page.css";
 @import "about-page.css";
 @import "foot-bar.css";
+@import "button-float.css";
 
 body {
     font-family: 'League Spartan', sans-serif;

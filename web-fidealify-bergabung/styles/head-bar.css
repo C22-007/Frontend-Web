@@ -1,4 +1,16 @@
+head-bar {
+    position: relative;
+}
+
 /* navbar */
+.navbar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+}
 .navbar-brand {
     font-family: 'League Spartan', sans-serif;
     font-size: 32px;

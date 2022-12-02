@@ -1,8 +1,21 @@
 /* jumbotron */
-.jumbotron {
+/* .jumbotron {
     background-size: cover;
-    height: 640px;
-    margin-top: -98px;
+    min-height: 640px;
+    position: relative;
+    top: 2rem;
+    opacity: 0.5;
+} */
+
+/* about-img */
+.about-img {
+    padding: 2rem;
+    display: block;
+}
+
+/* about-description */
+.about-description {
+    margin-top: 6rem;
 }
 
 /* timeline */
