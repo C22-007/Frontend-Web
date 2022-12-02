@@ -151,6 +151,8 @@ const displayCategory = () => {
 buttonHasil.addEventListener('click', (event) => {
     event.preventDefault();
 
+    
+
     if(inputUsia.value == "" || inputTinggi.value == "" || inputBerat.value == "") {
         alert('Mohon lengkapi data lebih dahulu...');
     } else {
