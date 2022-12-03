@@ -58,5 +58,4 @@ https://user-images.githubusercontent.com/107310486/204697158-64c2e07c-e133-44f3
 
 
 ## Credit & License
-- Illustration by Rizqi Alpiansyah
-[Animaker](https://app.animaker.com/animo/zv3Rr4Nq8FzzMXSg/)
+- Illustration by Rizqi Alpiansyah via [Animaker](https://app.animaker.com/animo/zv3Rr4Nq8FzzMXSg/)
