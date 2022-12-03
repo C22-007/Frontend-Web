@@ -12,6 +12,10 @@
     padding: 2rem;
     display: block;
 }
+.about-img-team {
+    width: 100%;
+    height: auto;
+}
 
 /* about-description */
 .about-description {

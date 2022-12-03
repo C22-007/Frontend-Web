@@ -9,7 +9,10 @@
 body {
     font-family: 'League Spartan', sans-serif;
 }
-
+main {
+    position: relative;
+    top: 5rem;
+}
 .content {
     width: 100%;
     min-height: 100vh;
@@ -51,6 +54,10 @@ head-bar {
     .image-custom {
         width: 200px;
     }
+    .img-home-custom {
+        display: block;
+        margin: 0 auto;
+    }
     .our-webcoderskull .cnt-block figure {
         width: 100%;
         height: auto;
@@ -87,6 +94,9 @@ head-bar {
     }
     .nav-link {
         text-align: center;
+    }
+    .about-img {
+        padding: 5rem;
     }
 }
 
@@ -147,5 +157,8 @@ head-bar {
     }
     .bar-container {
         margin-top: 1.2rem;
+    }
+    .about-img {
+        padding: 5rem;
     }
 }

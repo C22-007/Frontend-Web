@@ -5,7 +5,8 @@ head-bar {
 /* navbar */
 .navbar {
     position: fixed;
-    z-index: 1;
+    top: 0;
+    z-index: 9999;
     width: 100%;
     height: auto;
     background-color: white;
