@@ -1,0 +1,53 @@
+head-bar {
+    position: relative;
+}
+
+/* navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+}
+.navbar-brand {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-family: 'League Spartan', sans-serif;
+    font-size: large;
+}
+
+/* desktop-version */
+@media (min-width: 992px) {
+    .nav-link {
+        color: black !important;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron {
+        margin-top: -98px;
+    }
+    .workspace {
+        text-align: left;
+    }
+    .testimoni h5 {
+        font-size: 32px;
+    }
+}
