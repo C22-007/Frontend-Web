@@ -23,7 +23,7 @@ class FootBar extends HTMLElement {
                   <div class="col-md-2">
                         <ul class="pages">                    
                           <li><a href="index.html">Beranda</a></li>
-                          <li><a href="main.html">Timbang</a></li>
+                          <li><a href="https://alpiansyah1204-app-bodyfat-app-d9piml.streamlit.app/">Timbang</a></li>
                           <li><a href="blog.html">Blog</a></li>
                           <li><a href="about.html">Tentang Kami</a></li>
                         </ul>
