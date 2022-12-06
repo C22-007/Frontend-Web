@@ -1,0 +1,164 @@
+@import "head-bar.css";
+@import "home-page.css";
+@import "main-page.css";
+@import "blog-page.css";
+@import "about-page.css";
+@import "foot-bar.css";
+@import "button-float.css";
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+main {
+    position: relative;
+    top: 5rem;
+}
+.content {
+    width: 100%;
+    min-height: 100vh;
+}
+
+head-bar {
+    display: block;
+}
+
+.atas {
+    background-color: #3F6FF5;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    color: white;
+}
+
+/* responsive */
+@media screen and (max-width: 1007px) {
+    main {
+        margin: 0 auto;
+    }
+    .col-sm-5 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .offset-sm-1 {
+        margin-left: 0%;
+    }
+    .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    img {
+        width: 50%;
+        height: auto !important;
+    }
+    .image-custom {
+        width: 200px;
+    }
+    .img-home-custom {
+        display: block;
+        margin: 0 auto;
+    }
+    .our-webcoderskull .cnt-block figure {
+        width: 100%;
+        height: auto;
+        border-radius: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .our-webcoderskull .cnt-block img {
+        width: 150px;
+        height: auto;
+        border-radius: 100%;
+    }
+    .title-main-custom {
+        width: 50%;
+    }
+    .btn-col-custom {
+        margin-left: 0%;
+    }
+    .form-check {
+        display: inline;
+        margin-left: 4rem;
+    }
+    .title-custom {
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    .paragraph-custom {
+        text-align: center;
+    }
+    .btn-custom {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .nav-link {
+        text-align: center;
+    }
+    .about-img {
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+        height: auto !important;
+    }
+    .image-custom {
+        width: 150px;
+    }
+    .our-webcoderskull .cnt-block figure {
+        width: 100%;
+        height: auto;
+        border-radius: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .our-webcoderskull .cnt-block img {
+        width: 100px;
+        height: auto;
+        border-radius: 100%;
+    }
+    .logo-footer-custom {
+        width: 100px;
+    }
+    .title-custom {
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    .paragraph-custom {
+        text-align: center;
+    }
+    .btn-custom {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .nav-link {
+        text-align: center;
+    }
+    .footer-brand, 
+    .footer-nav,
+    .footer-social,
+    .footer-ns    {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .col-2 {
+        max-width: none;
+    }
+
+    .title-main-custom {
+        width: 100%;
+    }
+    .bar-container {
+        margin-top: 1.2rem;
+    }
+    .about-img {
+        padding: 5rem;
+    }
+}
