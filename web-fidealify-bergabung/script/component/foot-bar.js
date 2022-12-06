@@ -11,7 +11,7 @@ class FootBar extends HTMLElement {
         <footer class="footer-bs">
             <div class="row">
               <div class="col-md-3 footer-brand animated fadeInLeft">
-                <a href="#">
+                <a href="index.html">
                   <h2><img src="./assets/images/Fi-logo-medium.png" class="logo-footer-custom" width="99" alt="logo fi"></h2>
                 </a>
                     <p style="font-family: 'Inter', sans-serif; font-size: small; color: #838383;" >Such a honour to help all
