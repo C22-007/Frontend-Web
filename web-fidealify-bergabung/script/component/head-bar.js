@@ -18,7 +18,7 @@ class HeadBar extends HTMLElement {
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a class="nav-link" href="index.html">Beranda</a> 
-            <a class="nav-link" href="https://alpiansyah1204-app-bodyfat-app-d9piml.streamlit.app/">Timbang</a>
+            <a class="nav-link" href="https://alpiansyah1204-app-bodyfat-app-d9piml.streamlit.app/" target="_blank">Timbang</a>
             <a class="nav-link" href="blog.html">Blog</a>
             <a class="nav-link" href="about.html">Tentang Kami</a>
           </div>
