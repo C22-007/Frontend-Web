@@ -64,10 +64,10 @@ deployed on:
 	</thead>
 	<tr>
 		<td>
-			<img width="300" alt="code-one" src="https://github.com/C22-007/Frontend-Web/blob/main/4-page-Fidealify/Beranda.png">
+			<img width="300" alt="code-one" src="https://github.com/C22-007/Frontend-Web/blob/main/web-fidealify-bergabung/result/Beranda.png">
 		</td>
 		<td>
-			<img width="300" alt="render-one" src="https://github.com/C22-007/Frontend-Web/blob/main/4-page-Fidealify/Blog.png">
+			<img width="300" alt="render-one" src="https://github.com/C22-007/Frontend-Web/blob/main/web-fidealify-bergabung/result/Blog.png">
 		</td>
 	</tr>
 		<thead>
@@ -80,10 +80,10 @@ deployed on:
 	</thead>
 	<tr>
 		<td>
-			<img width="381" alt="code-two" src="https://github.com/C22-007/Frontend-Web/blob/main/4-page-Fidealify/About.png">
+			<img width="381" alt="code-two" src="https://github.com/C22-007/Frontend-Web/blob/main/web-fidealify-bergabung/result/About%20Us.png">
 		</td>
 		<td>
-			<img width="307" alt="render-two" src="https://github.com/C22-007/Frontend-Web/blob/main/4-page-Fidealify/Measure.png">
+			<img width="307" alt="render-two" src="https://github.com/C22-007/Frontend-Web/blob/main/web-fidealify-bergabung/result/Timbang.png">
 		</td>
 	</tr>
 </table>
